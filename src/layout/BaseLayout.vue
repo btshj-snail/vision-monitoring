@@ -41,6 +41,10 @@
     <div class="page__content">
       <router-view />
     </div>
+
+    <div class="page__bottom">
+      版权所有：东方电气集团东方电机有限公司
+    </div>
   </div>
 </template>
 
@@ -83,6 +87,14 @@ export default Vue.extend({
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+  }
+
+  &__bottom {
+    height: 42px;
+    line-height: 42px;
+    background-color: @main-color;
+    text-align: center;
+    color: #fff;
   }
 }
 
